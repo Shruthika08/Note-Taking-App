@@ -1,0 +1,89 @@
+/* Container Styling */
+
+.background-color {
+    background-color: #a1a0a0; /* Set background color outside container */
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: hsla(0, 0%, 100%, 0.982);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input and Button Styling */
+.note-input, .action-btn {
+    width: calc(100% - 23px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.action-btn {
+    width: 100%;
+    display: block;
+    background-color: #4caf4f94;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.action-btn:hover {
+    background-color: #45a049;
+}
+
+/* Note List Styling */
+.note-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Individual Note Styling */
+.note-item {
+    background-color: #c4eef3;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    position: relative; /* Add position relative for absolute positioning */
+}
+
+/* Note Text Styling */
+.note-text {
+    display: inline-block;
+    margin-right: 20px; /* Add space for the delete button */
+}
+
+/* Delete Button Styling */
+.delete-btn {
+    background-color: #f3b7e6da;
+    color: #000000;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    visibility: hidden;
+}
+
+/* Show delete button on hover */
+.note-item:hover .delete-btn {
+    visibility: visible;
+}
